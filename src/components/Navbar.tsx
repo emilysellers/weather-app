@@ -1,5 +1,6 @@
 import React from "react";
 import { MdLocationPin, MdOutlineMyLocation, MdWbSunny } from "react-icons/md";
+import SearchBox from "./SearchBox";
 
 type Props = {};
 
@@ -17,7 +18,9 @@ export default function Navbar({}: Props) {
           <p className="text-slate-900/80 text-sm">Portland</p>
         </section>
         <section>
-          <div>{/* search bar */}</div>
+          <div>
+            <SearchBox />
+          </div>
         </section>
       </div>
     </nav>
